@@ -48,7 +48,7 @@
 }
 
 .trainImage {
-    background-image: url("../../Assets/banner-3_46824600.jpg"); /* The image used */
+    background-image: url("/Assets/banner-3_46824600.jpg");     
     height: 500px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
