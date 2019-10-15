@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Train Scheduler</title>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="extensions/sticky-header/bootstrap-table-sticky-header.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class = "trainImage">
+    <div class="container">
+        <div class="jumbotron">
+            <h1><i class="fas fa-train"></i></h1>
+            <h1 class="text-center">Ultimate Metro Station Schedule</h1>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                <h2></h2>
+                <h2 id="currentTime">The current time is: </h2>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">Current Train Schedule</h3>
+            </div>
+            <div>
+            <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                <table id="trainTable">
+                    <thead>
+                        <tr>
+                            <th><i class="fas fa-train"></i> Train Name</th>
+                            <th><i class="far fa-paper-plane"></i> Destination</th>
+                            <th id="times"><i class="far fa-clock"></i> Frequency (min)</th>
+                            <th id="times"><i class="far fa-calendar-alt"></i> Next Arrival</th>
+                            <th id="times"><i class="fas fa-stopwatch"></i> Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Add Train</h3>
+                </div>
+                <div class="panel-body form-group">
+                    <form>
+                        <label for="trainName">Train Name</label>
+                        <br>
+                        <input type="text" class="form-control" name="trName" id="trainName" aria-describedby="TrainFormHelp" placeholder="Train Name" required>
+                        <label for="destination">Destination</label>
+                        <br>
+                        <input type="text" class="form-control" name="trDest" id="destination" placeholder="City, State" required>
+                        <br>
+                    </form>
+                    <form class="form-inline">
+                        <label for="firstTrain">First Train Time</label>
+                        <input type="time" class="form-control mx-sm-3 mb-2" name="trTime" id="firstTrain" required>
+                        <label>Frequency (min)</label>
+                        <input type="number" class="form-control mx-sm-3 mb-2" name="trFrequency" id="frequency" placeholder="30">
+                        <button id="addTrainBtn" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!--JavaScript-->
+
+            
+
+</body>
+    <script src="assets/trains.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</html>

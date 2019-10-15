@@ -1,0 +1,60 @@
+.jumbotron {
+    text-align: center;
+    background-color: lightskyblue;
+
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+#trainTable {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#trainTable td,
+#trainTable th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#trainTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+#trainTable th {
+    height: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+.min {
+    text-align: center;
+}
+
+#trainTable #times {
+    text-align: center;
+}
+
+.trainImage {
+    background-image: url("../../Assets/banner-3_46824600.jpg"); /* The image used */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+.panel-body{
+    background-color: lightskyblue;
+}
