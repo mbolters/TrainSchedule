@@ -3,7 +3,7 @@
 //Firebase
 
   // Firebase configuration
-  const firebaseConfig = {
+  var firebaseConfig = {
     apiKey: "AIzaSyBw1ek7iqxwHyE7I4rGDY7Q8WMkTZ9k9mY",
     authDomain: "trainschedule-af70d.firebaseapp.com",
     databaseURL: "https://trainschedule-af70d.firebaseio.com",
@@ -90,7 +90,6 @@ database.on("child_added", function(childSnapshot) {
 
 });
 
-console.log("theres an error")
 
 
 
